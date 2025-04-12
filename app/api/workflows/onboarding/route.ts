@@ -45,7 +45,7 @@ export const { POST } = serve<InitialData>(async (context) => {
     await sendEmail({
       email,
       subject: "Welcome to BookWise Platform",
-      message: `Welcome ${fullName}`,
+      message: `Welcome ${fullName} with email: ${email}`,
     });
   });
 

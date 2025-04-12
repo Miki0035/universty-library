@@ -27,8 +27,9 @@ export const sendEmail = async ({
       provider: resend({ token: config.env.resendToken }),
     },
     body: {
-      from: "BookWise <bookwise@resend.dev>",
-      to: [email],
+      from: "BookWise <onboarding@resend.dev>",
+      // to: email,   // NEED DOMAIN FOR RESEND TO SEND TO OTHER EMAIL ADDRESS
+      to: [`adissabebab344@gmail.com`],
       subject,
       html: message,
     },
