@@ -15,7 +15,7 @@ const {
 const authenticator = async () => {
   try {
     // NEXT API ROUTE
-    const response = await fetch(`${config.env.apiEndPoint}/api/auth/imagekit`);
+    const response = await fetch(`${config.env.prodApiEndpoint}/api/auth/imagekit`);
     // IF ERROR
     if (!response.ok) {
       const errorText = await response.text();
